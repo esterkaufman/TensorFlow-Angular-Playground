@@ -1,28 +1,32 @@
 # tensor-flow-angular
 
 ## When Google & JS & AI Meet
+The process of machine learning consists of:
+Training - which is the training of a particular model,
+Loading - which is the implementation of the model.
 
-התהליך של machine learning מורכב מtraining -שזה אימון של מודל מסוים ,
+The training is commonly implemented with the TensorFlow library written in c.
+Just using TensorFlow in js was quite heavy and complicated so Google released TensorFlow.js
 
-וloading שזה מימוש של המודל
+Which is actually a complete rewrite of TensorFlow to js.
 
-את הtraining מקובל לממש עם הספרייה TensorFlow שכתובה בשפת c.
-רק שלהשתמש ב TensorFlow ב js היה די כבד ומסובך ולכן גוגל שחררה את TensoreFlow.js
-
-שזה בעצם rewrite מלא של TensorFlow לjs.
-
-TensoreFlow.js מסתמכת על טכנולוגית WebGl שמריצה את כל החישובים על הכרטיס מסך במקום על הדפדפן וכך מתקבלת היכולת של מחשב רגיל.
+TensorFlow.js relies on WebGl technology that runs all the calculations on the GPU instead of on the browser and thus the capability of a regular computer is obtained.
 
 ### Trained models for image classifiers in js: 
 https://teachablemachine.withgoogle.com/train/image
 https://microsoft.github.io/onnxjs-demo/#/squeezenet
 
-### Training model in JS: TensoreFlow.js
+### Training model in JS: TensorFlow.js
 
 [Link] https://www.youtube.com/watch?v=pbCExciEbrc
 
+### Collection of TensorFlow.js projects, tutorials, videos, and more.
+Can reach out to this repo's owner to put this project on the list.
 
+https://github.com/tensorflow/tfjs/blob/master/GALLERY.md
 
+### More models as MobileNet, pre-trained TensorFlow.js models that can be used in any project out of the box.
+https://www.tensorflow.org/js/models
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.2.
 
@@ -41,8 +45,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 

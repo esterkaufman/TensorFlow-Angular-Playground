@@ -10,8 +10,8 @@ import * as tf from '@tensorflow/tfjs';
 })
 export class ImageClassifierWebcamComponent implements OnInit, AfterViewInit {
 
-  @ViewChild('video') video: ElementRef;
-  predictions: Prediction[];
+  @ViewChild('video') video: ElementRef | undefined;
+  predictions: Prediction[] = [];
   model: any;
   loading = true;
   constructor() { }
@@ -23,13 +23,13 @@ export class ImageClassifierWebcamComponent implements OnInit, AfterViewInit {
     this.loading = false;
 
     setInterval(async () => {
-      this.predictions = await this.model.classify(this.video.nativeElement);
+      this.predictions = await this.model.classify(this.video?.nativeElement);
       await tf.nextFrame();
     }, 3000);
   }
 
   async ngAfterViewInit() {
-    const vid = this.video.nativeElement;
+    const vid = this.video?.nativeElement;
 
     if (navigator.mediaDevices.getUserMedia) {
       navigator.mediaDevices.getUserMedia({ video: true })

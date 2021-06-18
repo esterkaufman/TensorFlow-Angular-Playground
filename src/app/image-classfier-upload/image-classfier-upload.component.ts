@@ -8,10 +8,10 @@ import * as mobilenet from '@tensorflow-models/mobilenet';
   styleUrls: ['./image-classfier-upload.component.scss']
 })
 export class ImageClassfierUploadComponent implements OnInit {
-  imageSrc: string;
-  @ViewChild('img') imageEl: ElementRef;
+  imageSrc: string="";
+  @ViewChild('img') imageEl: ElementRef | undefined;
 
-  predictions: Prediction[];
+  predictions: Prediction[] = [];
 
   model: any;
   loading = true;
@@ -26,16 +26,18 @@ export class ImageClassfierUploadComponent implements OnInit {
     this.loading = false;
   }
 
-  async fileChangeEvent(event) {
-    if (event.target.files && event.target.files[0]) {
+  async fileChangeEvent(event:Event) {
+    const files = (event.target as HTMLInputElement).files;
+
+    if (files && files[0]) {
       const reader = new FileReader();
 
-      reader.readAsDataURL(event.target.files[0]);
+      reader.readAsDataURL(files[0]);
 
       reader.onload = (res: any) => {
         this.imageSrc = res.target.result;
         setTimeout(async () => {
-          const imgEl = this.imageEl.nativeElement;
+          const imgEl = this.imageEl?.nativeElement;
           this.predictions = await this.model.classify(imgEl);
         }, 0);
 
