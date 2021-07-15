@@ -30,6 +30,11 @@ https://www.tensorflow.org/js/models
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.2.
 
+## Deployment (GitHub Pages)
+
+Run this locally: `ng deploy --base-href=/TensorFlow.js-Angular-Playground/`. This will deploy the app automatically as a github page.
+Navigate to `https://esterkaufman.github.io/TensorFlow.js-Angular-Playground/`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
