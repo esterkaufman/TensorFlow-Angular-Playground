@@ -32,8 +32,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Deployment (GitHub Pages)
 
-Run this locally: `ng deploy --base-href=/TensorFlow.js-Angular-Playground/`. This will deploy the app automatically as a github page.
-Navigate to `https://esterkaufman.github.io/TensorFlow.js-Angular-Playground/`
+View the website in: `https://esterkaufman.github.io/TensorFlow.js-Angular-Playground/`
+Run this locally: `ng deploy --base-href=/TensorFlow.js-Angular-Playground/`. 
+This will deploy the app automatically as a github page.
+
 
 ## Development server
 
