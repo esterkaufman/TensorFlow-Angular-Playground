@@ -33,10 +33,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Deployment (GitHub Pages)
 
 View the website in: `https://esterkaufman.github.io/TensorFlow.js-Angular-Playground/`
-To deploy your changes, run this locally: `ng deploy --base-href=/TensorFlow.js-Angular-Playground/`. 
-Or
-Run the following commands: 
-`ng build --prod --base-href=/TensorFlow.js-Angular-Playground/`
+To deploy your changes, run this locally: `ng deploy --base-href=https://esterkaufman.github.io/TensorFlow.js-Angular-Playground/`. 
+Or `npm run deploy`
+Or run the following commands: 
+`ng build --prod --base-href=https://esterkaufman.github.io/TensorFlow.js-Angular-Playground/ --output-path docs`
 `git config --global http.sslVerify false`
 `ngh`
 `git config --global http.sslVerify true`
