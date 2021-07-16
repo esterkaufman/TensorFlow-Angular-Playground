@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/tensor-flow-angular'),
+      dir: require('path').join(__dirname, './coverage/tensorflow-angular'),
       subdir: '.',
       reporters: [
         { type: 'html' },
