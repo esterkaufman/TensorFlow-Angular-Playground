@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng b --prod --base-href https://esterkaufman.github.io/TensorFlow-Angular-Playground/ && git config --global http.sslVerify false && npx ngh --dir=dist/tensorflow-angular && git config --global http.sslVerify true"
+    "deploy": "ng b --prod --base-href https://esterkaufman.github.io/TensorFlow-Angular-Playground/ && git config --global http.sslVerify false && ngh --dir=dist/tensorflow-angular --no-silent && git config --global http.sslVerify true"
   },
   "private": true,
   "dependencies": {

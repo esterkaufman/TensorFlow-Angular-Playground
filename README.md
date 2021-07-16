@@ -1,4 +1,5 @@
 # tensorflow-angular
+View this ML website in: [Link] https://esterkaufman.github.io/TensorFlow-Angular-Playground/
 
 ## When Google & JS & AI Meet
 The process of machine learning consists of:
@@ -32,16 +33,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Deployment (GitHub Pages)
 
-View the website in: `https://esterkaufman.github.io/TensorFlow-Angular-Playground/`
-To deploy your changes, run this locally: `ng deploy --base-href=https://esterkaufman.github.io/TensorFlow-Angular-Playground/`. 
-Or `npm run deploy`
-Or run the following commands: 
-`ng build --prod --base-href=https://esterkaufman.github.io/TensorFlow-Angular-Playground/ --output-path docs`
-`git config --global http.sslVerify false`
-`ngh`
-`git config --global http.sslVerify true`
-This will deploy the app automatically as a github page.
+To deploy your changes, run this locally: `npm run deploy`
 
+This will deploy the app automatically as a github page.
 
 ## Development server
 
